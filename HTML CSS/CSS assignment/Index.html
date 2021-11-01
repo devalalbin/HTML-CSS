@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
     <title>Albins indexsida</title>
     <!-- for the broswer to read -->
 
@@ -10,9 +11,9 @@
 <body>
     <!--for the user to see-->
     <header>
-        <h1>Albins index sida</h1> <!--Header of biggest size (h1)-->
-        <nav class="links">
-            <ul>
+        <h1 class="header-item">Index site</h1> <!--Header of biggest size (h1)-->
+        <nav>
+            <ul class="header-item">
                 <!--Unorderd List-->
                 <li><a href="http://www.google.se" class="link-button" id="link-google"> Google</a></li>
                 <li><a href="https://www.wikipedia.org/" class="link-button" id="link-wikipedia"> Wikipedia</a></li>
@@ -20,31 +21,32 @@
             </ul>
         </nav>
         <!--Hyperlink element to the loginpage-->
-        <a href="LoginPage.html" class="link-button" id="link-loginpage"> Login page</a>
+        <a href="LoginPage.html" class="header-item" id="link-loginpage"> Login page</a>
+
     </header>
 
     <!--  container element for the main content of the page-->
-    <div>
-        <h2>Headline2</h2>
-        <p>Paragraph text under the headline</p>
+    <main class="bodycontainer">
+        <h2 class="grid-item1">Headline</h2>
+        <p class="grid-item2">Paragraph text under the headline</p>
 
-        <article>
+        <article class="grid-item3" id="article1">
             <h3 style="font-size:larger">Article One</h3>
             <p>Paragraph text 1 in article 1</p>
             <p>Paragraph text 2 in article 1</p>
 
         </article>
-        <article>
+        <article class="grid-item4" id="article2">
             <h2 style="font-size:larger">Article Two</h2>
             <p>Paragraph text 1 in article 2</p>
             <p>Paragraph text 2 in article 2 regarding this cat</p>
-            <img src="cat.jpg"/>
+            <img src="cat.jpg" />
 
         </article>
 
-    </div>
+    </main>
 
-    <aside>
+    <aside class="bodycontainer">
         <h2>Aside Headline</h2>
         <ul>
             <li>
@@ -70,14 +72,15 @@
                     <li><p>Bergen 257K</p></li>
                     <li><p>Stavanger 225K</p></li>
                 </ol>
-                
+
             </li>
         </ul>
+
     </aside>
     <footer>
         <span>&copy; Albin de Val</span>
     </footer>
- 
+
 
 
 

@@ -1,0 +1,67 @@
+﻿header {
+    text-transform: uppercase; /*making the header text all uppercase*/
+}
+
+body {
+    background-color: lightblue;
+    max-width: 1024px;
+    margin: auto;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+
+form {
+    border-radius: 25px; /*border with rounded edges*/
+    border: 2px solid black;
+    padding: 20px;
+    width: 200px;
+    height: 50px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+
+#reset {
+    background-color: palevioletred; /*changing color of buttons*/
+    color: black;
+}
+#submit {
+    background-color: darkseagreen; /*changing color of buttons*/
+    color: black;
+}
+
+
+body > header {
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border: 1px solid black;
+    align-items: center;
+    height: 35px;
+}
+body > main {
+    background-color: lightgoldenrodyellow;
+    display: grid;
+    align-items: center;
+}
+nav ul { /*flexbox for the unorderd list*/
+    display: flex;
+    flex-direction: row;
+}
+
+nav li {
+    list-style: none;
+    padding: 0 20px 0 20px;
+    height: 35px;
+    width: 100%;
+    background-color: dodgerblue;
+    border: 1px solid black;
+}
+body > footer {
+    background-color: mediumpurple;
+    border: 1px solid black;
+}

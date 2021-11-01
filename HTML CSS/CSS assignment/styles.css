@@ -1,0 +1,108 @@
+﻿
+body {
+    background-color: lightblue;
+    max-width: 1024px;
+    margin: auto;
+    /* text-align: center;*/
+    font-family: sans-serif;
+   /* display:grid; */
+}
+.bodycontainer {
+    height: 700px;
+}
+body > header {
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border: 1px solid black;
+    align-items: center;
+    height: 35px;
+
+}
+.grid-item1 { /*grid items 1-4 is all the ones in the main body*/
+    grid-area: header;
+    border: 1px solid black;
+    background-color: lightcyan;
+}
+
+.grid-item2 {
+    grid-area: subtext1;
+    border: 1px solid black;
+    background-color: lightcyan;
+}
+
+.grid-item3 {
+    grid-area: article1;
+    border: 1px solid black;
+    background-color: lightcyan;
+}
+
+.grid-item4 {
+    grid-area: article2;
+    border: 1px solid black;
+    background-color: lightcyan;
+}
+
+body > main { 
+    background-color:lightgoldenrodyellow;
+    float: left; /*using "float left" to allign main with aside*/
+    width: 68%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 20px;
+    grid-template-areas: /*our grid*/
+        "header . . ."
+        "subtext1 subtext1 subtext1 subtext1"
+        "article1 article1 article2 article2"
+        "article1 article1 article2 article2";
+}
+
+
+
+body > aside {
+    background-color: lightgreen;
+    float: right;
+    width: 32%;
+}
+body > aside > ul {
+    border: 1px solid black;
+    background-color: lightcyan;
+
+}
+body > footer {
+    background-color: mediumpurple;
+    border: 1px solid black;
+    text-align: center;
+}
+
+
+.header-item {
+    height: 100%;
+    text-align: center;
+    padding-inline: 50px;
+}
+nav ul { /*flexbox for the unorderd list*/
+    display: flex;
+    flex-direction: row;
+}
+nav li {
+    list-style: none;
+    padding: 0 20px 0 20px;
+    height: 35px;
+    width: 100%;
+    background-color: dodgerblue;
+    border: 1px solid black;   
+}
+
+.grid-item{
+    background-color: aquamarine;
+}
+h1 {
+    color: red;
+}
+body > aside> h2 {
+    border: 1px solid black;
+    background-color: lightcyan;
+}
